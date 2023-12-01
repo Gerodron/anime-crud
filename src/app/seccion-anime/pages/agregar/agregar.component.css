@@ -1,0 +1,38 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+  }
+  
+  .form-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .example-form {
+    width: 300px;
+  }
+  
+  .mat-form-field {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .anime-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }

@@ -1,0 +1,92 @@
+<div class="mt-4">
+    <mat-grid-list cols="2" rowHeight="290px">
+      <mat-grid-tile colspan="1" rowspan="2">
+        <div class="form container">
+          <div class="form-container">
+            <form class="example-form">
+              <div class="flex">
+                <div class="input-container">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="ID" name="id" [(ngModel)]="anime.id">
+                  </mat-form-field>
+                </div>
+  
+                <div class="input-container">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Título" name="titulo" required  [(ngModel)]="anime.titulo">
+                  </mat-form-field>
+                </div>
+              </div>
+  
+              <div class="flex">
+                <div class="input-container">
+                    
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Genero" name="genero" required [(ngModel)]="anime.genero">
+                    </mat-form-field>
+                </div>
+  
+                <div class="input-container">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Puntuación" name="sinopsis" required [(ngModel)]="anime.puntuacion">
+                  </mat-form-field>
+                </div>
+              </div>
+  
+              <div class="flex">
+                <div class="input-container">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Temporadas" name="temporadas" required [(ngModel)]="anime.temporadas">
+                  </mat-form-field>
+                </div>
+  
+                <div class="input-container">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Episodios" name="episodios" required [(ngModel)]="anime.episodios" >
+                  </mat-form-field>
+                </div>
+              </div>
+  
+              <div class="flex">
+                <div class="input-container">
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Estado</mat-label>
+                    <mat-select [(ngModel)]="anime.estado" name="estado">
+                        <mat-option *ngFor="let estadoItem of estado" [value]="estadoItem.valor">
+                          {{ estadoItem.nombre }}
+                        </mat-option>
+                      </mat-select>
+                      
+                  </mat-form-field>
+                </div>
+  
+                <div class="input-container">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Estudio" name="estudio" required [(ngModel)]="anime.estudio">
+                  </mat-form-field>
+                </div>
+              </div>
+  
+              <div class="input-container">
+                <mat-form-field class="example-full-width">
+                    <textarea  matInput placeholder="Sinopsis" name="sinopsis" required [(ngModel)]="anime.sinopsis"></textarea>
+                </mat-form-field>
+              </div>
+  
+              <div class="button-container">
+                <button mat-raised-button color="primary" style="margin-right: 10px;" (click)="guardarAnime()" >Guardar</button>
+                <button mat-raised-button color="warn">Reiniciar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </mat-grid-tile>
+  
+      <mat-grid-tile colspan="1" rowspan="2">
+        <div class="anime-image">
+          <img src="/assets/img/one_piece.jpg" alt="" class="anime-image">
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  

@@ -1,0 +1,17 @@
+<div class="card-deck">
+    <div class="card anime-card">
+      <div class="crop-image">
+        <img class="card-img-top imagenCards" [src]="anime | img" alt="{{ anime.titulo }}" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{ anime.titulo }}</h5>
+        <p class="card-text">Temporadas: {{ anime.temporadas }}</p>
+        <p class="card-text">Episodios: {{ anime.episodios }}</p>
+      </div>
+      <div class="card-footer">
+        <button  [routerLink]="['/animes', anime.id ]" mat-raised-button color="primary">Leer más</button>
+        <button  [routerLink]="['']" mat-stroked-button color="accent">Editar</button>
+      </div>
+    </div>
+  </div>
+  

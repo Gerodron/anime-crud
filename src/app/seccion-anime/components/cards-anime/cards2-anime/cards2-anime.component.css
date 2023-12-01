@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+  .anime-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra mejorada */
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .anime-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .anime-image-container {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 300px;
+  }
+  
+  .anime-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .anime-details {
+    flex: 2;
+  }
+  
+  .anime-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .anime-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .anime-synopsis {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: #666;
+  }
+  
+  .read-more-button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .read-more-button:hover {
+    background-color: #0056b3;
+  }
+  

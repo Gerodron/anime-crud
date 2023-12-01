@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="anime-card">
+        <div class="anime-content">
+          <div class="anime-image-container">
+            <img class="anime-image" [src]=" anime | img" alt="{{ anime.titulo }}">
+          </div>
+          <div class="anime-details">
+            <h1 class="anime-title">{{ anime.titulo }}</h1>
+            <div class="anime-info">
+              <p><strong>Género:</strong> {{ anime.genero.join(', ') }}</p>
+              <p><strong>Temporadas:</strong> {{ anime.temporadas }}</p>
+              <p><strong>Episodios:</strong> {{ anime.episodios }}</p>
+              <p><strong>Estado:</strong> {{ anime.estado }}</p>
+              <p><strong>Estudio:</strong> {{ anime.estudio }}</p>
+              <p><strong>Puntuación:</strong> {{ anime.puntuacion }}</p>
+            </div>
+            <p class="anime-synopsis">{{ anime.sinopsis }}</p>
+            <button routerLink="/animes/listado" mat-button color="primary" class="read-more-button">Regresar</button>
+          </div>
+        </div>
+      </div>
+      
+</div>
